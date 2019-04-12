@@ -23,3 +23,5 @@ class Smurfs extends Component {
      )
     }
 }
+
+export default Smurfs;
