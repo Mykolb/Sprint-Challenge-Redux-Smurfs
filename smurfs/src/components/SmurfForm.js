@@ -20,9 +20,9 @@ class  SmurfForm extends Component {
 
 //change handler for form input 
 
-onChange = e => {
+onChange = event => {
     console.log('smurf handler is firing ');
-    e.persist();
+    event.persist();
 
     let value = event.target.value
 
