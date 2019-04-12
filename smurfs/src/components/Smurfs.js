@@ -14,7 +14,7 @@ class Smurfs extends Component {
                 age={smurf.age}
                 height={smurf.height}
                 id= {smurf.id}
-                key={smurf.id}
+                key={smurf.info}
                 />
             )
         })}
