@@ -10,8 +10,7 @@ class  SmurfForm extends Component {
             smurf: {
                 name: '',
                 age: '',
-                height: '',
-                id: ''
+                height: ''
             }
         }
     }
@@ -46,7 +45,6 @@ this.setState({
         name: '',
         age: '',
         height: '',
-        id: ''
     }
 })
 };
@@ -73,12 +71,6 @@ render() {
              name='height'
              value={this.state.smurf.height}
              placeholder='height'
-            />
-            <input
-             onChange={this.onChange}
-             name='id'
-             value={this.state.smurf.id}
-             placeholder='id'
             />
             <button type='submit'>Add smurf</button>
 

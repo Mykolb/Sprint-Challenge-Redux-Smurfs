@@ -28,7 +28,7 @@ export const CREATE_SMURF_FAILURE = 'CREATE_SMURF_FAILURE';
 
 export const addSmurf = smurfs => dispatch => {
   dispatch({ type: CREATE_SMURF});
-  axios.post('http://localhost:3333/smurfs')
+  axios.post('http://localhost:3333/smurfs', smurfs)
   .then(response =>
     dispatch({ type: CREATE_SMURF_SUCCESS, payload: response.data})
     )

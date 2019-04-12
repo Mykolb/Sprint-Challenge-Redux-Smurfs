@@ -52,7 +52,7 @@ export const smurfReducer = (state = initialState, action) => {
         ...state,
         smurfs: [...state.smurfs, ...action.payload],
         addingSmurf: true,
-        fetchingSmurfs: false
+        // fetchingSmurfs: false
       };
       case CREATE_SMURF_FAILURE:
       return {
