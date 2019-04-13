@@ -20,19 +20,14 @@ class  SmurfForm extends Component {
 //change handler for form input 
 
 onChange = event => {
-    console.log('smurf handler is firing ');
-    event.persist();
-
-    let value = event.target.value
-
-
-    this.setState(prevState => ({
-        smurf: {
-            ...prevState.smurf,
-            [event.target.name]: value
+   this.setState({
+       smurf: {
+           ...this.state.smurf,
+           [event.target.name]: event.target.value
+       }
+   });
         }
-    }))
-}
+    
 
 
 //onsubmit for form 
@@ -40,13 +35,13 @@ onSubmit = e => {
     e.preventDefault();
     this.props.addSmurf(this.state.smurf)
 
-this.setState({
-    smurf: {
-        name: '',
-        age: '',
-        height: '',
-    }
-})
+// this.setState({
+//     smurf: {
+//         name: '',
+//         age: '',
+//         height: '',
+//     }
+// })
 };
 
 
@@ -85,9 +80,10 @@ render() {
 const mapStateToProps = state => {
     console.log(state);
     return {
-        smurfs: state.smurfs,
+        // smurfs: state.smurfs,
         addingSmurf: state.addingSmurf,
-        error: state.error
+        error: state.error,
+        // fetchingSmurfs: state.fetchingSmurfs
     }
 }
 

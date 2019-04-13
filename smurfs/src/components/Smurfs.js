@@ -9,12 +9,12 @@ class Smurfs extends Component {
         <ul>
         {this.props.smurfs.map(smurf => {
             return(
-                <Smurf 
+                <Smurf key={smurf.id}
                 name={smurf.name}
                 age={smurf.age}
                 height={smurf.height}
                 id= {smurf.id}
-                key={smurf.info}
+                
                 />
             )
         })}

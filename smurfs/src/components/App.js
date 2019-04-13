@@ -44,7 +44,6 @@ const mapStateToProps = state => {
   return {
      smurfs: state.smurfs,
      fetchingSmurfs: state.fetchingSmurfs,
-     addingSmurf: state.addingSmurf,
      error: state.error
   }
 }

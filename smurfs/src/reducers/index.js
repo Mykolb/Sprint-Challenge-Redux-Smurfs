@@ -34,7 +34,7 @@ export const smurfReducer = (state = initialState, action) => {
       return {
         ...state,
         smurfs: [...state.smurfs, ...action.payload],
-        fetchingSmurfs: true,
+        fetchingSmurfs: false,
       };
       case FETCH_SMURF_FAILURE:
       return {
@@ -45,19 +45,23 @@ export const smurfReducer = (state = initialState, action) => {
       case CREATE_SMURF:
       return {
         ...state,
-        addingSmurf: true
+        addingSmurf: true,
+        fetchingSmurfs: false
       };
+      //it was originally smurfs: [...state.smurfs, ...action.payload] and that was adding the old state from state.smurfs and old & new state from action.payload
       case CREATE_SMURF_SUCCESS:
+      //console.log your code always from now on!!!!!
       return {
         ...state,
-        smurfs: [...state.smurfs, ...action.payload],
+        smurfs: [...action.payload],
         addingSmurf: true,
         fetchingSmurfs: false
       };
       case CREATE_SMURF_FAILURE:
       return {
         ...state,
-        error: action.payload
+        error: action.payload,
+        addingSmurf: false
       }
       default: 
         return state;

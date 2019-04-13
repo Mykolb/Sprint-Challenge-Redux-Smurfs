@@ -12,6 +12,14 @@ const sendUserError = (msg, res) => {
   return;
 };
 
+
+let nextId = 1;
+
+function getNewId() {
+  return nextId++;
+}
+
+
 let smurfs = [
   {
     name: 'Brainey',
