@@ -2,4 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url('https://cartoonwallpages.com/wp-content/uploads/2018/11/The-Smurfs-Logo-For-Android-1024x437.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 600px 350px;
 }

@@ -1,28 +1,18 @@
 .App {
   text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  
 }
+  .card {
+  margin-top: 2%;
+  border: 1px solid gray;
+  width: 350px;
+  height: auto;
+  box-shadow: 20px 20px lightgrey;
+  color: darkblue;
+  }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  .card:hover {
+    color: white;
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/71RqpsOVBML._SX425_.jpg')
+  }
